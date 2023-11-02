@@ -11,6 +11,14 @@ const starContainerStyle = {
   display: "flex",
 };
 
+StarRating.propTypes = {
+  maxRating: PropTypes.number.isRequired,
+  color: PropTypes.string.isRequired,
+  size: PropTypes.number.isRequired,
+  messages: PropTypes.array.isRequired,
+  defaultRating: PropTypes.number.isRequired,
+};
+
 export default function StarRating({
   maxRating,
   color = "#fcc419",
