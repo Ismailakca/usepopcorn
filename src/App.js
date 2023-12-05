@@ -79,7 +79,7 @@ export default function App() {
         console.log(err.message);
         setError(err.message);
       } finally {
-        setIsLoading(true);
+        setIsLoading(false);
       }
     }
     fetchMovies();
